@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Aventuras D&D 1.0</title>
+</head>
+<body>
+    <h1>Crie sua Aventura</h1>
+    <h2>Introdução da Aventura</h2>
+    <hr>
+    
+    <button onclick="gerarIntroducao()">Gerar introdução</button>
+    <p id="introducao-gerada"></p>
+    <script>let introducoes = [
+        "A Enguia Prateada",
+        "O Golfinho Dourado",
+        "O Anão Cambaleante",
+        "O Pégaso Sorridente",
+        "O Pónei Empinado",
+        "A Rosa Atraente",
+        "O Cervo Que Corre",
+        "O Lobo Uivante",
+        "O Cordeiro Abatido",
+        "O Demônio Malicioso",
+        "O Bode Bêbado",
+        "O Espírito Saltitante",
+        "A Horda Rugidor",
+        "O Bufão Carrancudo",
+        "A Montanha Solitário",
+        "A Águia Errante",
+        "O Sátiro Misterioso",
+        "O Cão Ladrante",
+        "A Aranha Negra",
+        "A Estrela Reluzente"
+      ];
+      
+      function gerarIntroducao() {
+        let introducao = introducoes[Math.floor(Math.random() * introducoes.length)];
+      
+        document.querySelector("#introducao-gerada").textContent = introducao;
+      }
+      </script>
+    <hr>
+
+    <h2>Nome da Taverna onde a Aventura começa</h2>
+    <hr>
+    
+    <button onclick="gerarFrase()">Nome da Taverna</button>
+    <p id="frase-gerada"></p>
+    <script>let frases = [
+        "A Enguia Prateada",
+        "O Golfinho Dourado",
+        "O Anão Cambaleante",
+        "O Pégaso Sorridente",
+        "O Pónei Empinado",
+        "A Rosa Atraente",
+        "O Cervo Que Corre",
+        "O Lobo Uivante",
+        "O Cordeiro Abatido",
+        "O Demônio Malicioso",
+        "O Bode Bêbado",
+        "O Espírito Saltitante",
+        "A Horda Rugidor",
+        "O Bufão Carrancudo",
+        "A Montanha Solitário",
+        "A Águia Errante",
+        "O Sátiro Misterioso",
+        "O Cão Ladrante",
+        "A Aranha Negra",
+        "A Estrela Reluzente"
+      ];
+      
+      function gerarFrase() {
+        let frase = frases[Math.floor(Math.random() * frases.length)];
+      
+        document.querySelector("#frase-gerada").textContent = frase;
+      }
+      </script>
+    
+
+    <h2>Clímax da Aventura</h2>
+    <hr>
+    <p>
+        <button>Gerar clímax</button>
+    </p>
+    <hr>
+
+    <h2>Onde se passa a Aventura?</h2>
+    <hr>
+    <p>
+        <button>Local da aventura</button>
+    </p>
+    <hr>
+
+    <h2>Plot Twist da Aventura</h2>
+    <hr>
+    <p>
+        <button>Plot Twist</button>
+    </p>
+    
+
+    
+</body>
+</html>
